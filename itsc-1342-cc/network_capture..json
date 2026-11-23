@@ -1,0 +1,32 @@
+[
+  {
+    "frame_id": 101,
+    "protocol_tag": "DNS",
+    "raw_stream": "QUERY A sec-ops.local 10.0.0.53"
+  },
+  {
+    "frame_id": 102,
+    "protocol_tag": "TCP",
+    "raw_stream": "AUTH_LEAK: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7test123 test_user@dev.local"
+  },
+  {
+    "frame_id": 103,
+    "protocol_tag": "HTTP",
+    "raw_stream": "GET /api/v1/health HTTP/1.1 Host: internal.net"
+  },
+  {
+    "frame_id": 104,
+    "protocol_tag": "TCP",
+    "raw_stream": "KEY_SYNC: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD9bkp456 backup_svc@internal.net"
+  },
+  {
+    "frame_id": 105,
+    "protocol_tag": "TCP",
+    "raw_stream": "EXFIL_STREAM: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQE4sec789 m_vance@sec-ops.local"
+  },
+  {
+    "frame_id": 106,
+    "protocol_tag": "TLS",
+    "raw_stream": "ClientHello cipher_suite=TLS_AES_256_GCM_SHA384"
+  }
+]
